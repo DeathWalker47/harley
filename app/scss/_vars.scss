@@ -4,16 +4,31 @@ $black:#000;
 $gray:#E2E2E2;
 
 %bebas-400{
-  font-family: 'BebasNeue-Regular', sans-serif;
+  font-family: 'Bebas Neue', sans-serif;
   font-weight: 400;
 }
 
 %montserrat-500{
-  font-family: 'Montserrat-Medium', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 500;
 }
 
 %montserrat-700{
-  font-family: 'Montserrat-Bold', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
+}
+
+%btn{
+  background-color: $default;
+  display: block;
+  border-radius: 6px;
+  color: $black;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 24px;
+  @extend %bebas-400;
+  transition: all .3s linear;
+  &:hover{
+    background-color: rgb(168, 168, 168);
+  }
 }

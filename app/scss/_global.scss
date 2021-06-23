@@ -1,8 +1,29 @@
 
 
 
+body{
+  color: $default;
+  @extend %montserrat-500;
+  font-size: 22px;
+  line-height: 27px;
+}
+
 .container{
   max-width: 1230px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+.page-section{
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+}
+
+.page-section__wrapper{
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
 }
