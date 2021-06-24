@@ -141,7 +141,7 @@
     position: relative;
   }
   &__img-box{
-    top: 13px;
+    top: 241px;
     position: absolute;
   }
   &__img{
@@ -182,20 +182,9 @@
     top: 457px;
     right: 251px;
   }
-}
-.title{
-  text-transform: uppercase;
-  font-size: 160px;
-  line-height: 195px;
-  position: absolute;
-  top: 93px;
-  left: 99px;
-  @extend %montserrat-700;
-  color: rgba($color: #fff, $alpha: .1);
-  z-index: -1;
-}
 
-.swiper-slide{
+
+  .swiper-slide{
     height: 100vh;
   }
 .swiper-button-prev,
@@ -243,6 +232,20 @@
   opacity: .8;
   position: relative;
 }
+}
+.title{
+  text-transform: uppercase;
+  font-size: 160px;
+  line-height: 195px;
+  position: absolute;
+  top: 93px;
+  left: 99px;
+  @extend %montserrat-700;
+  color: rgba($color: #fff, $alpha: .1);
+  z-index: -1;
+}
+
+
 
 .equipment{
   background-image: url('../images/bg-moto.jpg');
@@ -373,7 +376,85 @@
     padding-right: 15px;
     cursor: pointer;
   }
-  
 }
 
+.reviews{
+  background-image: url('../images/bg-section.jpg');
+}
+
+
+.slider{
+  padding-top: 240px;
+  &__item{
+    background-color: $gray;
+    padding: 60px 30px;
+    border-radius: 15px;
+    position: relative;
+    max-width: 900px;
+    &::after{
+      content: '';
+      position: absolute;
+      border: 70px solid transparent;
+      border-top: 40px solid #E2E2E2;
+      left: 42%;
+      bottom: -109px;
+    }
+  }
+  &__author{
+    width: 234px;
+    height: 132px;
+    margin: 0 auto;
+    margin-top: -123px;
+  }
+  &__item-img{
+    width: 234px;
+    object-fit: cover;
+    border-radius: 11px;
+  }
+  &__box{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+  &__time{
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #000000;
+    @extend %montserrat-700;
+  }
+  &__text{
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    @extend %montserrat-500;
+    color: #000000;
+  }
+}
+.slick-list{
+  padding: 88px 0 40px;
+}
+.slick-slide{
+  text-align: center;
+}
+.slick-arrow{
+  position: absolute;
+  top: 68%;
+  border: none;
+  background-color: transparent;
+  font-size: 0;
+  padding: 0;
+  width: 85px;
+  height: 85px;
+  z-index: 3;
+  cursor: pointer;
+}
+.slider-left{
+  left: 20px;
+}
+.slider-right{
+  right: 20px;
+}
 @import 'media';
