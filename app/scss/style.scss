@@ -120,12 +120,17 @@
 }
 
 .social-links{
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   &__link{
     margin-bottom: 9px;
+    opacity: .6;
+    transition: all .2s linear;
     &:nth-child(2){
       margin-bottom: 7px;
+    }
+    &:hover{
+      opacity: 1;
     }
   }
 }
@@ -179,6 +184,7 @@
   }
 }
 .title{
+  text-transform: uppercase;
   font-size: 160px;
   line-height: 195px;
   position: absolute;
@@ -186,6 +192,7 @@
   left: 99px;
   @extend %montserrat-700;
   color: rgba($color: #fff, $alpha: .1);
+  z-index: -1;
 }
 
 .swiper-slide{
@@ -228,7 +235,7 @@
   font-size: 41px;
   line-height: 50px;
   @extend %montserrat-500;
-  
+  z-index: -1;
 }
 
 .swiper-pagination-current{
@@ -237,6 +244,136 @@
   position: relative;
 }
 
-
+.equipment{
+  background-image: url('../images/bg-moto.jpg');
+  &__tabs{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 350px;
+    margin-right: 80px;
+  }
+  
+  &__tabs-item{
+    display: block;
+    font-size: 26px;
+    line-height: 32px;
+    opacity: .8;
+    margin-bottom: 22px;
+    &--active{
+      font-size: 31px;
+      line-height: 38px;
+      color: $accent;
+      @extend %montserrat-700;
+    }
+  }
+  &__content-box{
+    display: none;
+  }
+  .equipment__content-box--active{
+    display: block;
+  }
+  &__list{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item{
+    width: 250px;
+    background-color: $gray;
+    border-radius: 15px;
+    @extend %montserrat-700;
+    text-align: center;
+    /* padding: 0 22px; */
+  }
+  &__item + .equipment__item{
+    margin-left: 35px;
+  }
+  &__img{
+    width: 165px;
+    height: 188px;
+    object-fit: cover;
+    margin: -60px auto 0;
+  }
+  &__descr{
+    font-size: 20px;
+    line-height: 24px;
+    color: $black;
+    height: 48px;
+    margin-bottom: 10px;
+  }
+  &__price-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 22px;
+    padding: 0 22px;
+  }
+  &__price{
+    font-size: 27px;
+    line-height: 33px;
+    color: $accent;
+    sub{
+      font-size: 16px;
+      vertical-align: baseline;
+      padding-right: 5px;
+    }
+  }
+  &__price-link{
+   /*  display: block; */
+   font-size: 13px;
+   line-height: 16px;
+    color: $black;
+    padding-right: 15px;
+    position: relative;
+    transition: all .3s ease;
+    &::after{
+      content: '';
+      position: absolute;
+      width: 15px;
+      height: 10px;
+      background-image: url('../images/icons/arrow.svg');
+      top: 4px;
+      right: -2px;
+    }
+    &:hover{
+      color: rgb(43, 43, 43);
+    }
+  }
+  &__buy{
+    text-transform: uppercase;
+    display: block;
+    background: rgba(0, 0, 0, 0.9);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 7px 0;
+    transition: all .3s ease;
+    &:hover{
+      color: rgb(218, 218, 218);
+      background: rgba(0, 0, 0, 0.88);
+    }
+  }
+}
+.form{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5px;
+  &__label{
+    line-height: 22px;
+    color: $black;
+    @extend %bebas-400;
+    text-transform: uppercase;
+  }
+  &__select{
+    border-radius: 5px;
+    color: $black;
+    font-size: 16px;
+    line-height: 16px;
+    @extend %bebas-400;
+    margin-bottom: 22px;
+    padding-right: 15px;
+    cursor: pointer;
+  }
+  
+}
 
 @import 'media';

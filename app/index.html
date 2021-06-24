@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="icon" href="images/favicon.png" type="image/x-icon">
   <title>Document</title>
 </head>
 <body>
@@ -418,14 +419,7 @@
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
           </div>
-
-
-          
         </div>
-
-
-      <!-- </div> -->
-
     </div>
   </section>
   <section class="page-section equipment">
@@ -436,21 +430,21 @@
         </h2>
         <div class="equipment__tabs">
           <div class="equipment__tabs-btn">
-            <a class="equipment__tabs-item" href="#">
+            <a class="equipment__tabs-item equipment__tabs-item--active" href="#tab1">
               Helmets
             </a>
-            <a class="equipment__tabs-item" href="#">
+            <a class="equipment__tabs-item" href="#tab2">
               Jackets
             </a>
-            <a class="equipment__tabs-item" href="#">
+            <a class="equipment__tabs-item" href="#tab3">
               Cases
             </a>
-            <a class="equipment__tabs-item" href="#">
+            <a class="equipment__tabs-item" href="#tab4">
               Gloves
             </a>
           </div>
           <div class="equipment__content">
-            <div class="equipment__content-box">
+            <div class="equipment__content-box equipment__content-box--active" id="tab1">
               <ul class="equipment__list">
                 <li class="equipment__item">
                   <img class="equipment__img" src="images/content/helmet-1.png" alt="helmet">
@@ -458,15 +452,15 @@
                     AGV K1 Helmet
                   </p>
                   <form class="form" action="#">
-                    <label>COLOR
+                    <label  class="form__label">COLOR
                       <select class="form__select">
                         <option>ALL</option>
                         <option>GREEN</option>
                         <option>BLACK</option>
                         <option>RED</option>
                       </select>
-                    </label>
-                    <label>MATERIAL
+                    </label >
+                    <label class="form__label">MATERIAL
                       <select class="form__select">
                         <option>METALL</option>
                         <option selected>PLASTIC</option>
@@ -476,7 +470,8 @@
                     </label>
                     </form>
                     <div class="equipment__price-box">
-                      <p class="equipment__price"><span class="equipment__price-el">$</span>599.99</p>
+                      <p class="equipment__price">
+                        <sub>$</sub>599.99</p>
                       <a href="" class="equipment__price-link">DETAILS</a>
                     </div>
                     <a href="" class="equipment__buy">BUY NOW</a>
@@ -487,7 +482,7 @@
                     Icon Airflite Helmet
                   </p>
                   <form class="form" action="#">
-                    <label>COLOR
+                    <label class="form__label">COLOR
                       <select class="form__select">
                         <option>ALL</option>
                         <option>GREEN</option>
@@ -495,7 +490,7 @@
                         <option>RED</option>
                       </select>
                     </label>
-                    <label>MATERIAL
+                    <label class="form__label">MATERIAL
                       <select class="form__select">
                         <option>METALL</option>
                         <option selected>PLASTIC</option>
@@ -505,7 +500,8 @@
                     </label>
                     </form>
                     <div class="equipment__price-box">
-                      <p class="equipment__price"><span class="equipment__price-el">$</span>699.99</p>
+                      <p class="equipment__price">
+                        <sub>$</sub>699.99</p>
                       <a href="" class="equipment__price-link">DETAILS</a>
                     </div>
                     <a href="" class="equipment__buy">BUY NOW</a>
@@ -516,7 +512,7 @@
                     Scorpion EXO-R420 Helmet
                   </p>
                   <form class="form" action="#">
-                    <label>COLOR
+                    <label class="form__label">COLOR
                       <select class="form__select">
                         <option>ALL</option>
                         <option>GREEN</option>
@@ -524,7 +520,7 @@
                         <option>RED</option>
                       </select>
                     </label>
-                    <label>MATERIAL
+                    <label class="form__label">MATERIAL
                       <select class="form__select">
                         <option>METALL</option>
                         <option selected>PLASTIC</option>
@@ -534,47 +530,297 @@
                     </label>
                     </form>
                     <div class="equipment__price-box">
-                      <p class="equipment__price"><span class="equipment__price-el">$</span>399.99</p>
+                      <p class="equipment__price">
+                        <sub>$</sub>399.99</p>
                       <a href="" class="equipment__price-link">DETAILS</a>
                     </div>
                     <a href="" class="equipment__buy">BUY NOW</a>
                 </li>
               </ul>
             </div>
-            <div class="equipment__content-box">
+            <div class="equipment__content-box" id="tab2">
               <ul class="equipment__list">
                 <li class="equipment__item">
-                  <img src="" alt="" class="equipment__item-img">
+                  <img class="equipment__img" src="images/content/helmet-1.png" alt="helmet">
+                  <p class="equipment__descr">
+                    Jackets
+                  </p>
+                  <form class="form" action="#">
+                    <label  class="form__label">Jackets
+                      <select class="form__select">
+                        <option>ALL</option>
+                        <option>GREEN</option>
+                        <option>BLACK</option>
+                        <option>RED</option>
+                      </select>
+                    </label >
+                    <label class="form__label">Jackets
+                      <select class="form__select">
+                        <option>METALL</option>
+                        <option selected>PLASTIC</option>
+                        <option>ORGANIC</option>
+                        <option disabled>.......</option>
+                      </select>
+                    </label>
+                    </form>
+                    <div class="equipment__price-box">
+                      <p class="equipment__price">
+                        <sub>$</sub>599.99</p>
+                      <a href="" class="equipment__price-link">Jackets</a>
+                    </div>
+                    <a href="" class="equipment__buy">Jackets</a>
                 </li>
                 <li class="equipment__item">
-                  <img src="" alt="" class="equipment__item-img">
+                  <img class="equipment__img" src="images/content/helmet-1.png" alt="helmet">
+                  <p class="equipment__descr">
+                    Jackets
+                  </p>
+                  <form class="form" action="#">
+                    <label class="form__label">Jackets
+                      <select class="form__select">
+                        <option>ALL</option>
+                        <option>GREEN</option>
+                        <option>BLACK</option>
+                        <option>RED</option>
+                      </select>
+                    </label>
+                    <label class="form__label">Jackets
+                      <select class="form__select">
+                        <option>METALL</option>
+                        <option selected>PLASTIC</option>
+                        <option>ORGANIC</option>
+                        <option disabled>.......</option>
+                      </select>
+                    </label>
+                    </form>
+                    <div class="equipment__price-box">
+                      <p class="equipment__price">
+                        <sub>$</sub>699.99</p>
+                      <a href="" class="equipment__price-link">Jackets</a>
+                    </div>
+                    <a href="" class="equipment__buy">Jackets</a>
                 </li>
                 <li class="equipment__item">
-                  <img src="" alt="" class="equipment__item-img">
+                  <img class="equipment__img" src="images/content/helmet-1.png" alt="helmet">
+                  <p class="equipment__descr">
+                    Jackets
+                  </p>
+                  <form class="form" action="#">
+                    <label class="form__label">Jackets
+                      <select class="form__select">
+                        <option>ALL</option>
+                        <option>GREEN</option>
+                        <option>BLACK</option>
+                        <option>RED</option>
+                      </select>
+                    </label>
+                    <label class="form__label">Jackets
+                      <select class="form__select">
+                        <option>METALL</option>
+                        <option selected>PLASTIC</option>
+                        <option>ORGANIC</option>
+                        <option disabled>.......</option>
+                      </select>
+                    </label>
+                    </form>
+                    <div class="equipment__price-box">
+                      <p class="equipment__price">
+                        <sub>$</sub>399.99</p>
+                      <a href="" class="equipment__price-link">Jackets</a>
+                    </div>
+                    <a href="" class="equipment__buy">Jackets</a>
                 </li>
               </ul>
             </div>
-            <div class="equipment__content-box">
-              <p class="equipment__text">
-                Далеко-далеко за, словесными горами в стране гласных и согласных живут рыбные тексты. Составитель эта, своего подпоясал буквоград, мир меня большого, рыбными точках грамматики возвращайся диких коварный дал курсивных свой образ толку города она бросил раз! Диких рекламных решила продолжил рыбного раз использовало реторический алфавит языкового несколько города. Он, обеспечивает свой? Подзаголовок, приставка.
-              </p>
-              <p class="equipment__text">
-                Далеко-далеко за, словесными горами в стране гласных и согласных живут рыбные тексты. Составитель эта, своего подпоясал буквоград, мир меня большого, рыбными точках грамматики возвращайся диких коварный дал курсивных свой образ толку города она бросил раз! Диких рекламных решила продолжил рыбного раз использовало реторический алфавит языкового несколько города. Он, обеспечивает свой? Подзаголовок, приставка.
-              </p>
-            </div>
-            <div class="equipment__content-box">
+            <div class="equipment__content-box" id="tab3">
               <ul class="equipment__list">
                 <li class="equipment__item">
-                  <img src="" alt="" class="equipment__item-img">
+                  <img class="equipment__img" src="images/content/helmet-2.png" alt="helmet">
+                  <p class="equipment__descr">
+                    Cases
+                  </p>
+                  <form class="form" action="#">
+                    <label  class="form__label">Cases
+                      <select class="form__select">
+                        <option>ALL</option>
+                        <option>GREEN</option>
+                        <option>BLACK</option>
+                        <option>RED</option>
+                      </select>
+                    </label >
+                    <label class="form__label">Cases
+                      <select class="form__select">
+                        <option>METALL</option>
+                        <option selected>PLASTIC</option>
+                        <option>ORGANIC</option>
+                        <option disabled>.......</option>
+                      </select>
+                    </label>
+                    </form>
+                    <div class="equipment__price-box">
+                      <p class="equipment__price">
+                        <sub>$</sub>599.99</p>
+                      <a href="" class="equipment__price-link">Cases</a>
+                    </div>
+                    <a href="" class="equipment__buy">Cases</a>
                 </li>
                 <li class="equipment__item">
-                  <img src="" alt="" class="equipment__item-img">
+                  <img class="equipment__img" src="images/content/helmet-2.png" alt="helmet">
+                  <p class="equipment__descr">
+                    Cases
+                  </p>
+                  <form class="form" action="#">
+                    <label class="form__label">Cases
+                      <select class="form__select">
+                        <option>ALL</option>
+                        <option>GREEN</option>
+                        <option>BLACK</option>
+                        <option>RED</option>
+                      </select>
+                    </label>
+                    <label class="form__label">Cases
+                      <select class="form__select">
+                        <option>METALL</option>
+                        <option selected>PLASTIC</option>
+                        <option>ORGANIC</option>
+                        <option disabled>.......</option>
+                      </select>
+                    </label>
+                    </form>
+                    <div class="equipment__price-box">
+                      <p class="equipment__price">
+                        <sub>$</sub>699.99</p>
+                      <a href="" class="equipment__price-link">Cases</a>
+                    </div>
+                    <a href="" class="equipment__buy">Cases</a>
                 </li>
                 <li class="equipment__item">
-                  <img src="" alt="" class="equipment__item-img">
+                  <img class="equipment__img" src="images/content/helmet-2.png" alt="helmet">
+                  <p class="equipment__descr">
+                    Cases
+                  </p>
+                  <form class="form" action="#">
+                    <label class="form__label">Cases
+                      <select class="form__select">
+                        <option>ALL</option>
+                        <option>GREEN</option>
+                        <option>BLACK</option>
+                        <option>RED</option>
+                      </select>
+                    </label>
+                    <label class="form__label">Cases
+                      <select class="form__select">
+                        <option>METALL</option>
+                        <option selected>PLASTIC</option>
+                        <option>ORGANIC</option>
+                        <option disabled>.......</option>
+                      </select>
+                    </label>
+                    </form>
+                    <div class="equipment__price-box">
+                      <p class="equipment__price">
+                        <sub>$</sub>399.99</p>
+                      <a href="" class="equipment__price-link">Cases</a>
+                    </div>
+                    <a href="" class="equipment__buy">Cases</a>
                 </li>
               </ul>
             </div>
+            <div class="equipment__content-box" id="tab4">
+              <ul class="equipment__list">
+                <li class="equipment__item">
+                  <img class="equipment__img" src="images/content/helmet-3.png" alt="helmet">
+                  <p class="equipment__descr">
+                    Gloves
+                  </p>
+                  <form class="form" action="#">
+                    <label  class="form__label">Gloves
+                      <select class="form__select">
+                        <option>ALL</option>
+                        <option>GREEN</option>
+                        <option>BLACK</option>
+                        <option>RED</option>
+                      </select>
+                    </label >
+                    <label class="form__label">Gloves
+                      <select class="form__select">
+                        <option>METALL</option>
+                        <option selected>PLASTIC</option>
+                        <option>ORGANIC</option>
+                        <option disabled>.......</option>
+                      </select>
+                    </label>
+                    </form>
+                    <div class="equipment__price-box">
+                      <p class="equipment__price">
+                        <sub>$</sub>999.99</p>
+                      <a href="" class="equipment__price-link">Gloves</a>
+                    </div>
+                    <a href="" class="equipment__buy">Gloves</a>
+                </li>
+                <li class="equipment__item">
+                  <img class="equipment__img" src="images/content/helmet-3.png" alt="helmet">
+                  <p class="equipment__descr">
+                    Gloves
+                  </p>
+                  <form class="form" action="#">
+                    <label class="form__label">Gloves
+                      <select class="form__select">
+                        <option>ALL</option>
+                        <option>GREEN</option>
+                        <option>BLACK</option>
+                        <option>RED</option>
+                      </select>
+                    </label>
+                    <label class="form__label">Gloves
+                      <select class="form__select">
+                        <option>METALL</option>
+                        <option selected>PLASTIC</option>
+                        <option>ORGANIC</option>
+                        <option disabled>.......</option>
+                      </select>
+                    </label>
+                    </form>
+                    <div class="equipment__price-box">
+                      <p class="equipment__price">
+                        <sub>$</sub>999.99</p>
+                      <a href="" class="equipment__price-link">Gloves</a>
+                    </div>
+                    <a href="" class="equipment__buy">Gloves</a>
+                </li>
+                <li class="equipment__item">
+                  <img class="equipment__img" src="images/content/helmet-3.png" alt="helmet">
+                  <p class="equipment__descr">
+                    Gloves
+                  </p>
+                  <form class="form" action="#">
+                    <label class="form__label">Gloves
+                      <select class="form__select">
+                        <option>ALL</option>
+                        <option>GREEN</option>
+                        <option>BLACK</option>
+                        <option>RED</option>
+                      </select>
+                    </label>
+                    <label class="form__label">Gloves
+                      <select class="form__select">
+                        <option>METALL</option>
+                        <option selected>PLASTIC</option>
+                        <option>ORGANIC</option>
+                        <option disabled>.......</option>
+                      </select>
+                    </label>
+                    </form>
+                    <div class="equipment__price-box">
+                      <p class="equipment__price">
+                        <sub>$</sub>999.99</p>
+                      <a href="" class="equipment__price-link">Gloves</a>
+                    </div>
+                    <a href="" class="equipment__buy">Gloves</a>
+                </li>
+              </ul>
+            </div>
+            
           </div>
         </div>
       </div>
@@ -589,7 +835,7 @@
         <div class="slider">
           <div class="slider__item">
             <div class="slider__author">
-              <img class="slider__item-img" src="" alt="author">
+              <img class="slider__item-img" src="images/content/man.jpg" alt="author">
             </div>
             <div class="slider__box">
               <time datetime="2018-12-27">27/12/2018</time>
