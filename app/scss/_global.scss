@@ -28,3 +28,16 @@ body{
   position: relative;
   z-index: 1;
 }
+
+.title{
+  text-transform: uppercase;
+  font-size: 160px;
+  line-height: 195px;
+  position: absolute;
+  /* top: 93px; */
+  top: 14%;
+  left: 99px;
+  @extend %montserrat-700;
+  color: rgba($color: #fff, $alpha: .1);
+  z-index: -1;
+}

@@ -10,7 +10,7 @@
   position: absolute;
   left: 0;
   right: 0;
-  top: 50px;
+  top: 35px;
   z-index: 4;
   /* width: 100%; */
   background-color: transparent;
@@ -28,14 +28,22 @@
   }
   &__item + .menu__item{
     margin-left: 50px;
+  } 
+  &__item{
+    transition: all .3s ease;
+    &:hover{
+      opacity: .7;
+    }
   }
   &__item-link{
     text-transform: uppercase;
     font-size: 19px;
     line-height: 23px;
-    transition: all .3s ease;
+  }
+ .active{
+    color: $accent;
     &:hover{
-      color: $accent;
+      opacity: 1;
     }
   }
 }
@@ -238,17 +246,6 @@
   position: relative;
 }
 }
-.title{
-  text-transform: uppercase;
-  font-size: 160px;
-  line-height: 195px;
-  position: absolute;
-  top: 93px;
-  left: 99px;
-  @extend %montserrat-700;
-  color: rgba($color: #fff, $alpha: .1);
-  z-index: -1;
-}
 
 
 
@@ -258,7 +255,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 350px;
+    /* padding-top: 350px; */
+    padding-top: 290px;
     margin-right: 80px;
   }
   
@@ -389,7 +387,8 @@
 
 
 .slider{
-  padding-top: 290px;
+  /* padding-top: 290px; */
+  padding-top: 240px;
   &__item{
     background-color: $gray;
     padding: 40px 17px;
@@ -399,17 +398,17 @@
     &::after{
       content: '';
       position: absolute;
-      border: 70px solid transparent;
+      border: 80px solid transparent;
       border-top: 40px solid #E2E2E2;
-      left: 42%;
-      bottom: -109px;
+      left: 39%;
+      bottom: -119px;
     }
   }
   &__author{
     width: 234px;
     height: 132px;
     margin: 0 auto;
-    margin-top: -123px;
+    margin-top: -131px;
   }
   &__item-img{
     width: 234px;
@@ -419,7 +418,7 @@
   &__box{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 50px;
+    margin-bottom: 47px;
   }
   &__time{
     font-size: 23px;
@@ -431,7 +430,7 @@
   }
   &__text{
     font-size: 25px;
-    line-height: 31px;
+    line-height: 33px;
     text-align: center;
     letter-spacing: 0.02em;
     @extend %montserrat-500;
@@ -439,7 +438,7 @@
   }
 }
 .slick-list{
-  padding: 88px 0 40px;
+  padding: 93px 0 40px;
 }
 .slick-slide{
   text-align: center;
@@ -476,7 +475,8 @@
     background-color: rgba($color: #1A1B1D, $alpha: .6);
   }
   &__inner{
-    padding-top: 240px;
+    /* padding-top: 240px; */
+    padding-top: 260px;
     display: flex;
   }
   &__address{

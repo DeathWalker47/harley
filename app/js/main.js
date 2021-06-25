@@ -1,6 +1,50 @@
-/* const { default: Swiper } = require("swiper"); */
 
 $(function(){
+  const section = $('.section'),
+  nav = $('.page-section'),
+  navHeight = nav.outerHeight(); // получаем высоту навигации 
+
+// поворот экрана 
+window.addEventListener('orientationchange', function () {
+navHeight = nav.outerHeight();
+}, false);
+
+$(window).on('scroll', function () {
+const position = $(this).scrollTop();
+
+section.each(function () {
+    const top = $(this).offset().top - navHeight - 5,
+          bottom = top + $(this).outerHeight();
+
+    if (position >= top && position <= bottom) {
+        nav.find('a').removeClass('active');
+        section.removeClass('active');
+
+        $(this).addClass('active');
+        nav.find('a[href="#' + $(this).attr('id') + '"]').addClass('active');
+    }
+});
+});
+
+nav.find('a').on('click', function () {
+const id = $(this).attr('href');
+
+$('html, body').animate({
+    scrollTop: $(id).offset().top - navHeight
+}, 487);
+
+return false;
+});
+
+ /*  $('.menu__item-link').on('click', function(){
+    $('.menu__item-link').removeClass('menu__item-link--active');
+    $(this).addClass('menu__item-link--active');
+  });
+
+  $('.logotip').on('click', function(){
+    $('.menu__item-link').removeClass('menu__item-link--active');
+    $('.menu__item-link--top').addClass('menu__item-link--active');
+  }); */
   
   $('.equipment__tabs-item').on('click', function(e){
     e.preventDefault();
@@ -9,14 +53,15 @@ $(function(){
 
     $('.equipment__content-box').removeClass('equipment__content-box--active');
     $($(this).attr('href')).addClass('equipment__content-box--active');
-    /* $('.equipment__content-box').removeClass('equipment__content-box--active');
-    $($(this).attr('href')).addClass('equipment__content-box--active'); */
+   
   });
 
   $('.slider').slick({
     infinite: true,
     speed: 800,
     slidesToShow: 1,
+    fade: true,
+    cssEase: 'linear',
     /* slidesToScroll: 1, */
     prevArrow: '<button class="slider-btn slider-left"><img src="images/icons/slider-left.svg"></button>',
     nextArrow: '<button class="slider-btn slider-right"><img src="images/icons/slider-right.svg"></button>'
@@ -47,8 +92,6 @@ $(function(){
 });
 
 
-
-
 const swiper = new Swiper('.swiper-container', {
     speed: 1000,
     effect: 'fade',
@@ -75,4 +118,4 @@ const swiper = new Swiper('.swiper-container', {
   
 
   
-  
+ 
