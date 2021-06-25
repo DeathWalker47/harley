@@ -6,6 +6,7 @@ body{
   @extend %montserrat-500;
   font-size: 22px;
   line-height: 27px;
+  position: relative;
 }
 
 .container{
@@ -19,11 +20,11 @@ body{
   background-position: center center;
   background-size: cover;
   position: relative;
-  height: 100vh;
+ /*  height: 100vh; */
 }
 
 .page-section__wrapper{
-  min-height: 100vh;
+  height: 100vh;
   position: relative;
   z-index: 1;
 }
