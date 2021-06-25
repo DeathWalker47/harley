@@ -152,20 +152,29 @@
   background-image: url('../images/bg-section.jpg');
   &__inner{
     position: relative;
+    /* display: flex; */
+    /*  margin-right: 80px; */
+    padding-top: 200px;
+    margin-right: 340px;
   }
   &__img-box{
     top: 241px;
     position: absolute;
-  }
+    /* width: 719px;
+    left: -250px; */
+    left: 0;
+  } 
+  
   &__img{
     object-fit: cover;
   }
+  
   &__content{
     max-width: 650px;
     text-align: right;
     margin-left: auto;
-    padding-top: 188px;
-    padding-right: 107px;
+    /* padding-top: 188px; */
+    padding-top: 50px;
   }
   &__title{
     @extend %bebas-400;
@@ -192,8 +201,10 @@
   }
   &__slider-button{
     position: absolute;
-    top: 457px;
-    right: 251px;
+   /*  top: 457px;
+    right: 251px; */
+    top: 510px;
+    right: 390px;
   }
 
 
@@ -229,8 +240,8 @@
 .swiper-pagination{
   /* top: 108px;
   left: 467px; */
-  top: 13%;
-  left: 31%;
+  top: 20%;
+  left: 27%;
   font-size: 41px;
   line-height: 50px;
   opacity: .8;
@@ -292,7 +303,7 @@
     /* padding: 0 22px; */
   }
   &__item + .equipment__item{
-    margin-left: 40px;
+    margin-left: 35px;
   }
   &__img{
     width: 165px;
@@ -581,7 +592,8 @@
  */
 
  #fp-nav.fp-right {
-  right: 122px;
+  right: 107px;
+  top: 52%;
 }
 
  #fp-nav ul li {
@@ -590,7 +602,7 @@
    align-items: center;
    width: 19px;
    height: 19px;
-   margin-bottom: 60px;
+   margin-bottom: 57px;
 }
  #fp-nav ul li a{
   background: rgba(255, 255, 255, 0.7);
