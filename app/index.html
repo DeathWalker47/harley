@@ -11,16 +11,16 @@
 <body>
   <header class="header" >
     <div class="container">
-      <div class="header__inner" >
-        <div class="logotip" >
-          <a class="logo" href="#">
+      <div class="header__inner" id="header__nav">
+        <div class="logotip" data-menuanchor="top">
+          <a class="logo" href="#top">
             <picture class="logo__img">
               <source srcset="images/logo-medium.png" media="(max-width:840px)">
               <img src="images/logo.png" alt=" logo">
             </picture>
           </a>
         </div>
-        <nav class="menu" id="header__nav">
+        <nav class="menu" >
           <ul class="menu__list">
             <li class="menu__item" data-menuanchor="top">
               <a class="menu__item-link " href="#top">ABOUT US</a>
@@ -51,7 +51,7 @@
     </div>
   </header>
   <main id="fullpage">
-    <section class="page-section top" data-anchor="top">
+    <section class="page-section top" data-anchor="top" data-tooltip="ABOUT US">
       <div class="page-section__wrapper top__wrapper">
         <div class="container">
           <!-- <header class="header" id="header__nav">
@@ -137,7 +137,7 @@
         </div>
       </div>
     </section>
-    <section class="page-section bikes" data-anchor="bikes">
+    <section class="page-section bikes" data-anchor="bikes" data-tooltip="BIKES">
       <div class="page-section__wrapper">
         <div class="container">
           <h2 class="title">
@@ -449,7 +449,7 @@
           </div>
       </div>
     </section>
-    <section class="page-section equipment" data-anchor="equipment">
+    <section class="page-section equipment" data-anchor="equipment" data-tooltip="EQUIPMENT">
       <div class="page-section__wrapper">
         <div class="container">
           <h2 class="title">
@@ -853,7 +853,7 @@
         </div>
       </div>
     </section>
-    <section class="page-section reviews" data-anchor="reviews">
+    <section class="page-section reviews" data-anchor="reviews" data-tooltip="REVIEWS">
       <div class="page-section__wrapper">
         <div class="container">
           <h2 class="title">
@@ -919,7 +919,7 @@
         </div>
       </div>
     </section>
-    <section class="page-section contacts" data-anchor="contacts">
+    <section class="page-section contacts" data-anchor="contacts" data-tooltip="CONTACTS">
       <div class="page-section__wrapper">
         <div class="container">
           <h2 class="title">

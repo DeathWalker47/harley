@@ -6,11 +6,11 @@
 
 
 .header{
-  padding-top: 50px;
+ /*  padding-top: 50px; */
   position: absolute;
   left: 0;
   right: 0;
-  top: 30px;
+  top: 50px;
   z-index: 4;
   /* width: 100%; */
   background-color: transparent;
@@ -389,13 +389,13 @@
 
 
 .slider{
-  padding-top: 210px;
+  padding-top: 290px;
   &__item{
     background-color: $gray;
-    padding: 60px 30px;
+    padding: 40px 17px;
     border-radius: 15px;
     position: relative;
-    max-width: 900px;
+    max-width: 750px;
     &::after{
       content: '';
       position: absolute;
@@ -422,16 +422,16 @@
     margin-bottom: 50px;
   }
   &__time{
-    font-size: 30px;
-    line-height: 35px;
+    font-size: 23px;
+    line-height: 28px;
     text-align: center;
     letter-spacing: 0.06em;
     color: #000000;
     @extend %montserrat-700;
   }
   &__text{
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 25px;
+    line-height: 31px;
     text-align: center;
     letter-spacing: 0.02em;
     @extend %montserrat-500;
@@ -439,7 +439,7 @@
   }
 }
 .slick-list{
-  padding: 66px 0 40px;
+  padding: 88px 0 40px;
 }
 .slick-slide{
   text-align: center;
@@ -457,10 +457,10 @@
   cursor: pointer;
 }
 .slider-left{
-  left: 20px;
+  left: 90px;
 }
 .slider-right{
-  right: 20px;
+  right: 90px;
 }
 
 
@@ -478,13 +478,13 @@
   &__inner{
     padding-top: 240px;
     display: flex;
-    justify-content: space-between;
   }
   &__address{
     font-weight: 500;
     font-size: 25px;
     line-height: 30px;
     font-style: normal;
+    margin-right: 30px;
   }
   &__item{
     padding-left: 80px;
@@ -539,9 +539,10 @@
   height: 327px;
   border-radius: 15px;
   margin-right: 56px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-#fp-nav.fp-right {
+/* #fp-nav.fp-right {
   right: 122px;
   width: 20px;
   text-align: center;
@@ -550,21 +551,68 @@
   
     li{
       margin: 0 0 60px 0;
-      &:hover{
-        transform: scale(0);
+      width: 20px;
+      height: 20px;
+      a{
+        display: inline-block;
+        width: 20px;
+        height: 20px;
       }
     }
   }
+}
+#fp-nav.fp-right ul li:hover{
+  
 }
 #fp-nav ul li a.active span{
   width: 19px;
   height: 19px;
   background-color: $accent;
+ 
 }
+
 #fp-nav ul li a span{
   width: 13px;
   height: 13px;
   background: rgba(255, 255, 255, 0.7);
+   top: 5px;
+  left: 5px;
+}
+ */
+
+ #fp-nav.fp-right {
+  right: 122px;
+}
+
+ #fp-nav ul li {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 19px;
+   height: 19px;
+   margin-bottom: 60px;
+}
+ #fp-nav ul li a{
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+ }
+ #fp-nav ul li a.active{
+   background-color: $accent;
+   width: 19px;
+   height: 19px;
+ }
+ #fp-nav ul li a span{
+   background-color: transparent;
+ }
+
+ #fp-nav ul li .fp-tooltip.fp-right {
+  right: 25px;
+  top: -3px;
+  text-transform: uppercase;
+  font-family: 'Montserrat-Medium', sans-serif;
+  font-weight: 500;
 }
 
 @import 'media';
