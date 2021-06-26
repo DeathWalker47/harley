@@ -97,6 +97,7 @@ return false;
     sectionSelector: '.page-section',
     navigation: true,
     scrollingSpeed: 900,
+    scrollOverflow: true,
     menu: '#header__nav',
     anchors: ['top', 'bikes', 'equipment', 'reviews', 'contact'],
     css3:true,
