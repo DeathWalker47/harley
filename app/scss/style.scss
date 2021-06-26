@@ -95,10 +95,7 @@
 
 .top{
     background-image: url('../images/bg-one.jpg');
-  /* padding: 50px 0 70px; */
- /*  height: calc(100vh - 143px); */
   &__wrapper{
- /*  height: calc(100vh - 143px); */
   padding-top: 143px;
   padding-bottom: 74px;
   }
@@ -155,7 +152,7 @@
     /* display: flex; */
     /*  margin-right: 80px; */
     padding-top: 200px;
-    margin-right: 340px;
+    margin-right: 80px;
   }
   &__img-box{
     top: 241px;
@@ -269,6 +266,7 @@
     /* padding-top: 350px; */
     padding-top: 290px;
     margin-right: 80px;
+    padding-bottom: 200px;
   }
   &__menu{
     display: none;

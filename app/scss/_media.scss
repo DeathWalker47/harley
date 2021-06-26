@@ -88,6 +88,7 @@
 @media (max-width:550px){
   .top{
     background-image: url('../images/bg-topmobile.jpg');
+    
     &__content {
       max-width: 100%;
       margin: 0;
@@ -111,6 +112,7 @@
   .top{
     &__wrapper{
       padding-top: 110px;
+      padding-bottom: 25px;
     }
     &__content-title {
     font-size: 22px;

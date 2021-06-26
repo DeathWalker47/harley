@@ -20,11 +20,11 @@ body{
   background-position: center center;
   background-size: cover;
   position: relative;
- /*  height: 100vh; */
+  height: 100vh;
 }
 
 .page-section__wrapper{
-  height: 100vh;
+  /* height: 100vh; */
   position: relative;
   z-index: 1;
 }

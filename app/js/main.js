@@ -91,7 +91,7 @@ return false;
   });
 
   new fullpage('#fullpage', {
-    //options here
+    
     autoScrolling:true,
     scrollHorizontally: true,
     sectionSelector: '.page-section',
@@ -113,9 +113,7 @@ const swiper = new Swiper('.swiper-container', {
     fadeEffect: {
     crossFade: true
   },
-  zoom: {
-    maxRatio: 1.5,
-  },
+ 
     loop: false,
     pagination: {
       el: '.swiper-pagination',
