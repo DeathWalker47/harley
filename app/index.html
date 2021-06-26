@@ -51,7 +51,7 @@
     </div>
   </header>
   <main id="fullpage" >
-    <section class="page-section top" data-anchor="top" data-tooltip="ABOUT US">
+    <section class="page-section top "  data-anchor="top" data-tooltip="ABOUT US">
       <div class="page-section__wrapper top__wrapper">
         <div class="container">
           <!-- <header class="header" id="header__nav">
@@ -137,7 +137,7 @@
         </div>
       </div>
     </section>
-    <section class="page-section bikes" data-anchor="bikes" data-tooltip="BIKES">
+    <section class="page-section bikes " data-anchor="bikes" data-tooltip="BIKES"  >
       <div class="page-section__wrapper">
         <div class="container">
           <h2 class="title">
@@ -149,7 +149,7 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="bikes__img-box">
-                  <img class="bikes__img" src="images/content/moto.png" alt="bikes">
+                  <div class="swiper-zoom-container"><img class="bikes__img" src="images/content/moto.png" alt="bikes"></div>
                 </div>
                 <div class="bikes__inner">
                     <div class="bikes__content">
@@ -445,20 +445,38 @@
                 Gloves
               </a>
             </div>
+            <div class="equipment__menu">
+              <button class="equipment__menu-btn">
+              </button>
+              <ul class="equipment__menu-list">
+                <li class="equipment__menu-item">
+                  <a href="#tab1" class="equipment__menu-link equipment__menu-link--active">Helmets</a>
+                </li>
+                <li class="equipment__menu-item">
+                  <a href="#tab2" class="equipment__menu-link ">Jackets</a>
+                </li>
+                <li class="equipment__menu-item">
+                  <a href="#tab3" class="equipment__menu-link">Cases</a>
+                </li>
+                <li class="equipment__menu-item">
+                  <a href="#tab4" class="equipment__menu-link">Gloves</a>
+                </li>
+              </ul>
+            </div>
             <div class="equipment__content">
               <div class="equipment__content-box equipment__content-box--active" id="tab1">
                 <ul class="equipment__list">
                   <li class="equipment__item">
-                    <img class="equipment__img" src="images/content/helmet-1.png" alt="helmet">
-                    <p class="equipment__descr">
-                      AGV K1 Helmet
-                    </p>
+                        <img class="equipment__img" src="images/content/helmet-1.png" alt="helmet">
+                      <p class="equipment__descr">
+                        AGV K1 Helmet
+                      </p>
                     <form class="form" action="#">
                       <label  class="form__label">COLOR
                         <select class="form__select">
                           <option>ALL</option>
                           <option>GREEN</option>
-                          <option>BLACK</option>
+                          <option >BLACK</option>
                           <option>RED</option>
                         </select>
                       </label >
@@ -488,7 +506,7 @@
                         <select class="form__select">
                           <option>ALL</option>
                           <option>GREEN</option>
-                          <option>BLACK</option>
+                          <option >BLACK</option>
                           <option>RED</option>
                         </select>
                       </label>
@@ -516,17 +534,17 @@
                     <form class="form" action="#">
                       <label class="form__label">COLOR
                         <select class="form__select">
-                          <option>ALL</option>
-                          <option>GREEN</option>
-                          <option>BLACK</option>
-                          <option>RED</option>
+                          <option disabled>ALL</option>
+                          <option selected>GREEN</option>
+                          <option disabled>BLACK</option>
+                          <option disabled>RED</option>
                         </select>
                       </label>
                       <label class="form__label">MATERIAL
                         <select class="form__select">
                           <option>METALL</option>
                           <option selected>PLASTIC</option>
-                          <option>ORGANIC</option>
+                          <option disabled>ORGANIC</option>
                           <option disabled>.......</option>
                         </select>
                       </label>
@@ -889,12 +907,30 @@
                 wants to feel the real power and comfort of motobike.
               </p>
             </div>
+            <div class=" slider__item ">
+              <div class="slider__author">
+                <img class="slider__item-img" src="images/content/man2.jpg" alt="author">
+              </div>
+              <div class="slider__box">
+                <time class="slider__time" datetime="2018-12-27">27/12/2018</time>
+                <div class="star"
+                data-rateyo-rating="5"
+                data-rateyo-spacing="5px">
+              </div>
+              </div>
+              <p class="slider__text">
+                Just marvelous! I am crazy about motobikes, used a
+                bike from Harley-Davidson,  this passion was only
+                increased. I really recommend it them, who really
+                wants to feel the real power and comfort of motobike.
+              </p>
+            </div>
     
           </div>
         </div>
       </div>
     </section>
-    <section class="page-section contacts" data-anchor="contacts" data-tooltip="CONTACTS">
+    <section class="page-section contacts " data-anchor="contacts" data-tooltip="CONTACTS">
       <div class="page-section__wrapper">
         <div class="container">
           <h2 class="title">

@@ -38,6 +38,7 @@ function scripts() {
     'node_modules/rateyo/src/jquery.rateyo.js',
     'node_modules/fullpage.js/dist/fullpage.js',
     'node_modules/fullpage.js/vendors/scrolloverflow.js',
+    'node_modules/fullpage.js/dist/fullpage.extensions.min.js',
     'node_modules/jquery-parallax.js/parallax.js',
     'app/js/main.js'
   ])

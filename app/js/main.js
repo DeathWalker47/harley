@@ -37,16 +37,7 @@ $('html, body').animate({
 return false;
 });
 
- /*  $('.menu__item-link').on('click', function(){
-    $('.menu__item-link').removeClass('menu__item-link--active');
-    $(this).addClass('menu__item-link--active');
-  });
 
-  $('.logotip').on('click', function(){
-    $('.menu__item-link').removeClass('menu__item-link--active');
-    $('.menu__item-link--top').addClass('menu__item-link--active');
-  }); */
-  
   $('.equipment__tabs-item').on('click', function(e){
     e.preventDefault();
     $('.equipment__tabs-item').removeClass('equipment__tabs-item--active');
@@ -54,7 +45,29 @@ return false;
 
     $('.equipment__content-box').removeClass('equipment__content-box--active');
     $($(this).attr('href')).addClass('equipment__content-box--active');
-   
+  });
+
+
+  $('.equipment__menu-link').on('click', function(e){ 
+    e.preventDefault(); 
+  /* Убираю дефолтный переход по ссылкам */
+    $('.equipment__menu-link').removeClass('equipment__menu-link--active');
+    $('.equipment__menu-link').removeClass('equipment__menu-link--block');
+    /* При клике на ссылку, убираю у ВСЕХ ссылок класс актив, также убираю у ВСЕХ ссылок класс блок, который делает ссылку видимой(css) */
+    $(this).addClass('equipment__menu-link--active');
+    /* а при клике на ссылку у нее добавляется класс актив*/
+
+    $('.equipment__content-box').removeClass('equipment__content-box--active');
+    /* также при клике на ссылку, у у всех боксов убирается класс актив */
+    $($(this).attr('href')).addClass('equipment__content-box--active');
+    /* А здесь мы ищем ссылку, на которую кликнули, у которой href имеет id бокса, и добавляем этому боксу класс актив */
+  });
+
+  $('.equipment__menu-btn').on('click', function(){
+    $(this).removeClass('equipment__menu-link--block');
+    /* При клике на кнопку меню то у ТОГО, на КОГО КЛИКНУЛИ, убирается класс блок*/
+    $('.equipment__menu-link').toggleClass('equipment__menu-link--block');
+    /* При клике на кнопку меню, у ссылок добавляектся класс блок */
   });
 
   $('.slider').slick({
@@ -100,23 +113,17 @@ const swiper = new Swiper('.swiper-container', {
     crossFade: true
   },
   zoom: {
-    maxRatio: 2,
+    maxRatio: 1.5,
   },
-  
     loop: false,
     pagination: {
       el: '.swiper-pagination',
       clickable: 'true',
       type: 'fraction',
     },
-  
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-    
   });
   
-
-  
- 
