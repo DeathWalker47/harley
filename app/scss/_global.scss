@@ -41,3 +41,40 @@ body{
   color: rgba($color: #fff, $alpha: .1);
   z-index: -1;
 }
+
+@media (max-width:1090px){
+  .title {
+    font-size: 110px;
+    line-height: 134px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media (max-width:834px){
+  .title {
+    top: 60px;
+  }
+}
+
+@media (max-width: 760px){
+.title {
+    top: 80px;
+    font-size: 80px;
+    line-height: 100px;
+  }
+}
+@media (max-width: 570px){
+  .title {
+    font-size: 55px;
+    line-height: 67px;
+    color: rgba(255,255,255, .3);
+  }
+}
+@media (max-width: 375px){
+  .title {
+    font-size: 46px;
+    line-height: 55px;
+    top: 90px;
+  }
+}

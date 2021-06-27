@@ -1,5 +1,7 @@
 
 $(function(){
+
+
   const section = $('.section'),
   nav = $('.page-section'),
   navHeight = nav.outerHeight(); // получаем высоту навигации 

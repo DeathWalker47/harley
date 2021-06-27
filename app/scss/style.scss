@@ -279,6 +279,7 @@
    width: 25px;
    height: 25px;
    position: relative;
+   display: block;
    &::before{
     content: '';
     position: absolute;
@@ -331,6 +332,23 @@
   .equipment__content-box--active{
     display: block;
   }
+  &__show-all{
+    display: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 22px;
+    line-height: 26px;
+    width: 191px;
+    height: 58px;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid $gray;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    z-index: 45;
+  }
+
   &__list{
     display: flex;
     justify-content: space-between;

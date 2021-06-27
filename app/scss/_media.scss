@@ -1,4 +1,36 @@
 
+@media (max-width:1360px){
+  #fp-nav.fp-right {
+    right: 30px;
+    top: 52%;
+  }
+}
+
+@media (max-width:1090px){
+  .equipment{
+    &__tabs{
+      display: block;
+      padding-top: 200px;
+      padding-bottom: 40px;
+    }
+    &__tabs-btn{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 65px;
+    }
+    &__tabs-item {
+      margin: 0 10px;
+    }
+    &__item{
+      width: 230px;
+    }
+  }
+  .equipment__item+.equipment__item {
+    margin-left: 0;
+  }
+  
+}
 
 @media (max-width:1200px){
   .menu{
@@ -73,6 +105,49 @@
   #fp-nav.fp-right {
     right: 53px;
   }
+
+  .equipment{
+    &__tabs{
+      margin-right: 0;
+    }
+    &__tabs-btn{
+      margin-bottom: 130px;      
+    }
+    &__list{
+      display: flex;
+      justify-content: center;
+    }
+    &__item{
+      margin-right: 36px;
+      width: 260px;
+      &:nth-child(1){
+        display: none;
+      }
+    }
+    &__show-all{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 34px;
+      &::after{
+        background: #fff;
+        content: "";
+        height: 155px;
+        left: -75px;
+        opacity: .2;
+        position: absolute;
+        top: -50px;
+        width: 50px;
+        transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+        transform: rotate(35deg);
+        z-index: -10;
+      }
+    }
+    &__show-all:hover:after {
+      left: 120%;
+      transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    }
+  }
 }
 
 @media (max-width:760px){
@@ -82,7 +157,21 @@
   .user-panel__btn{
     pointer-events: auto;
   }
-
+  .equipment{
+    &__list{
+      display: block;
+    }
+    &__item{
+      margin: 0 auto;
+      padding-top: 1px;
+      &:nth-child(2){
+        display: none;
+      }
+    }
+  }
+  .equipment__item+.equipment__item {
+    margin-left: auto;
+}
 }
 
 @media (max-width:550px){
@@ -102,6 +191,17 @@
   }
   #fp-nav.fp-right {
     display: none;
+  }
+
+  .equipment{
+    &__tabs-item{
+      font-size: 18px;
+      line-height: 20px;
+    }
+    &__tabs-item--active {
+      font-size: 20px;
+      line-height: 24px;
+    }
   }
 }
 
@@ -143,5 +243,23 @@
       }
     }
   }
-
+  ul.equipment__list{
+    display: flex;
+    flex-direction: column;
+  }
+  .equipment{
+    &__tabs-btn{
+      display: none;
+    }
+    &__menu{
+      display: block;
+      position: relative;
+      margin-bottom: 130px;
+    }
+    &__menu-list{
+      position: absolute;
+      top: 0;
+      left: 25px;
+    }
+  }
 }
