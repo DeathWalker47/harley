@@ -452,6 +452,7 @@
 }
 .reviews{
   background-image: url('../images/bg-section.jpg');
+  
 }
 
 
@@ -504,6 +505,9 @@
     letter-spacing: 0.02em;
     @extend %montserrat-500;
     color: #000000;
+  }
+  &__text-hidden{
+    display: none;
   }
 }
 .slick-list{

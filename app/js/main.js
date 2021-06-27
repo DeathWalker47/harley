@@ -108,11 +108,31 @@ return false;
     cssEase: 'linear',
     /* slidesToScroll: 1, */
     prevArrow: '<button class="slider-btn slider-left"><img src="images/icons/slider-left.svg"></button>',
-    nextArrow: '<button class="slider-btn slider-right"><img src="images/icons/slider-right.svg"></button>'
+    nextArrow: '<button class="slider-btn slider-right"><img src="images/icons/slider-right.svg"></button>',
+    responsive: [
+      {
+        breakpoint: 761,
+        settings:{
+        dots: true,
+        arrows: false,
+        }
+      },
+      {
+        breakpoint: 376,
+        settings:{
+          dots: true,
+          arrows: true,
+          prevArrow: '<button class="slider-btn slider-left"><img src="images/icons/slider-leftmobile.svg"></button>',
+          nextArrow: '<button class="slider-btn slider-right"><img src="images/icons/slider-rightmobile.svg"></button>',
+        }
+      }
+    ]
+     
+    
   });
 
   $(".star").rateYo({
-    starWidth: "29px",
+    /* starWidth: "29px", */
     normalFill: "#A5A5A5",
     ratedFill: "#000",
     fullStar: true,
