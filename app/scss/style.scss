@@ -546,6 +546,7 @@
   &__inner{
     /* padding-top: 240px; */
     padding-top: 260px;
+    padding-bottom: 50px;
     display: flex;
   }
   &__address{
@@ -596,7 +597,6 @@
   &__link{
     display: flex;
     flex-direction: row;
-    margin-top: 50px;
     a{
       margin-right: 25px;
     }

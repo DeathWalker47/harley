@@ -6,6 +6,22 @@
   }
 }
 
+@media (max-width:1200px){
+  .menu{
+    margin-right: auto;
+    &__item-link{
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+  .menu__item+.menu__item {
+    margin-left: 30px;
+  }
+  .user-panel__link {
+    margin-right: 20px;
+  }
+}
+
 @media (max-width:1090px){
   .equipment{
     &__tabs{
@@ -29,24 +45,23 @@
   .equipment__item+.equipment__item {
     margin-left: 0;
   }
-  
-}
+  #map{
+    width: 356px;
+    height: 207px;
+  }
 
-@media (max-width:1200px){
-  .menu{
-    margin-right: auto;
-    &__item-link{
-      font-size: 16px;
-      line-height: 20px;
+  .contacts{
+    &__address{
+      font-size: 22px;
+      line-height: 26px;
+      margin-right: 20px;
+    }
+    &__item {
+      margin-bottom: 50px;
     }
   }
-  .menu__item+.menu__item {
-    margin-left: 30px;
-  }
-  .user-panel__link {
-    margin-right: 20px;
-  }
 }
+
 
 @media (max-width:834px){
  
@@ -104,7 +119,7 @@
   }
 
   #fp-nav.fp-right {
-    right: 53px;
+    right: 30px;
   }
 
   .equipment{
@@ -123,9 +138,9 @@
       margin-right: 36px;
       width: 260px;
       margin-bottom: 85px;
-     /*  &:nth-child(1){
-        display: none;
-      } */
+      &:last-child{
+        margin-right: 0;
+      }
     }
     &__show-all{
       display: flex;
@@ -158,6 +173,46 @@
       display: none;
     }
   }
+
+  .contacts{
+    &__inner{
+      padding-top: 180px;
+    }
+    &__address{
+      font-size: 16px;
+      line-height: 20px;
+      margin-right: 20px;
+      margin-left: 55px;
+    }
+    &__item {
+      margin-bottom: 42px;
+      padding-left: 50px;
+    }
+    &__item--geo::before {
+      background-image: url(../images/icons/geo.svg);
+      width: 40px;
+      height: 40px;
+      top: 0;
+      left: 0;
+    }
+    &__item--phone::before {
+      background-image: url(../images/icons/phone.svg);
+      width: 40px;
+      height: 40px;
+      top: 0;
+      left: 0;
+    }
+    &__item--message::before {
+      background-image: url(../images/icons/messege.svg);
+      width: 40px;
+      height: 40px;
+      top: 2px;
+      left: 0;
+    }
+    &__link{
+      margin-left: 55px;
+    }
+  }
 }
 
 @media (max-width:760px){
@@ -175,7 +230,7 @@
       margin: 0 auto 85px;
       padding-top: 1px;
      &:last-child{
-       margin-bottom: 0;
+       margin: 0 auto;
      }
     }
     .equipment__item--helmets,
@@ -192,6 +247,16 @@
   .equipment__item+.equipment__item {
     margin-left: auto;
   }
+
+  #map{
+    display: none;
+  }
+  .contacts__address {
+    font-size: 20px;
+    line-height: 24px;
+    margin-right: 0;
+  }
+
 }
 
 @media (max-width:550px){
@@ -223,6 +288,16 @@
       line-height: 24px;
     }
   }
+  .contacts__address,
+  .contacts__link {
+    margin-left: 0;
+  }
+  .contacts__inner,
+  .contacts__link{
+    padding-bottom: 30px;
+    justify-content: center;
+  }
+
 }
 
 @media (max-width:375px){
@@ -280,6 +355,19 @@
       position: absolute;
       top: 0;
       left: 25px;
+    }
+  }
+
+  .contacts{
+    &__item {
+      padding-left: 0;
+      padding-top: 45px;
+      text-align: center;
+      &::before{
+        left: 50%;
+        transform: translateX(-50%);
+        top: -5px;
+      }
     }
   }
 }
