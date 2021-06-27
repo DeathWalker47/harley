@@ -1,7 +1,35 @@
 
 $(function(){
 
+  $(".equipment__item--helmets").slice(0, 2).show();
+  $(".equipment__show-all").on("click", function(e){
+    e.preventDefault();
+    $(".equipment__item--helmets:hidden").slice(0, 10).slideDown();
+    if($(".equipment__item--helmets:hidden").length == 0) {
+      $(".equipment__show-all").text("No Content").addClass("noContent");
+    }
+  });
 
+  $(".equipment__item--jackets ").slice(0, 2).show();
+  $(".equipment__show-all").on("click", function(e){
+    e.preventDefault();
+    $(".equipment__item--jackets:hidden").slice(0, 2).slideDown();
+    if($(".equipment__item--jackets:hidden").length == 0) {
+      $(".equipment__show-all").text("No Content").addClass("noContent");
+    }
+  });
+
+  $(".equipment__item--cases ").slice(0, 2).show();
+  $(".equipment__show").on("click", function(e){
+    e.preventDefault();
+    $(".equipment__item--cases:hidden").slice(0, 2).slideDown();
+    if($(".equipment__item--cases:hidden").length == 0) {
+      $(".equipment__show").text("No Content").addClass("noContent");
+    }
+  });
+
+  
+ 
   const section = $('.section'),
   nav = $('.page-section'),
   navHeight = nav.outerHeight(); // получаем высоту навигации 

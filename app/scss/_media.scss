@@ -49,6 +49,7 @@
 }
 
 @media (max-width:834px){
+ 
   .header__inner {
     margin-right: 55px;
     margin-left: 55px;
@@ -116,13 +117,15 @@
     &__list{
       display: flex;
       justify-content: center;
+      flex-wrap: wrap;
     }
     &__item{
       margin-right: 36px;
       width: 260px;
-      &:nth-child(1){
+      margin-bottom: 85px;
+     /*  &:nth-child(1){
         display: none;
-      }
+      } */
     }
     &__show-all{
       display: flex;
@@ -148,6 +151,13 @@
       transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
     }
   }
+  .equipment__item--helmets,
+  .equipment__item--jackets,
+  .equipment__item--cases{
+    &:nth-child(1){
+      display: none;
+    }
+  }
 }
 
 @media (max-width:760px){
@@ -162,8 +172,18 @@
       display: block;
     }
     &__item{
-      margin: 0 auto;
+      margin: 0 auto 85px;
       padding-top: 1px;
+     &:last-child{
+       margin-bottom: 0;
+     }
+    }
+    .equipment__item--helmets,
+    .equipment__item--jackets,
+    .equipment__item--cases{
+      &:nth-child(1){
+        display: none;
+      }
       &:nth-child(2){
         display: none;
       }
@@ -171,7 +191,7 @@
   }
   .equipment__item+.equipment__item {
     margin-left: auto;
-}
+  }
 }
 
 @media (max-width:550px){
