@@ -137,15 +137,21 @@
   .user-panel .user-panel__btn-line {
     width: 27px;
     height: 4px;
+    margin-left: auto;
+    transition: opacity .1s linear;
+  }
+  .user-panel .user-panel__btn{
     &::before {
-      width: 17px;
-      height: 4px;
-      top: 8px;
-    }
-    &::after{
+      transition: transform .3s linear;
       width: 21px;
       height: 4px;
-      bottom: 8px;
+      top: 3px;
+    }
+    &::after{
+      transition: transform .3s linear;
+      width: 17px;
+      height: 4px;
+      bottom: 3px;
     }
   }
   .top{
@@ -319,12 +325,61 @@
 }
 
 @media (max-width:760px){
-  .menu__list{
-    display: none;
+  
+  ul.menu__list{
+    padding-top: 70px;
+    padding-left: 55px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    flex-direction: column;
+    display: flex;
+    background-color: rgba(0,0,0, 0.7);
+    transform: translateY(-600%);
+    transition: all .5s ease;
+    &--active{
+      transform: translateY(0%);
+    }
+  }
+  .menu{
+    &__item{
+      margin-bottom: 35px;
+    }
+    &__item-link{
+      font-size: 23px;
+      line-height: 30px;
+    }
+  }
+  .menu__item+.menu__item {
+    margin-left: 0;
   }
   .user-panel__btn{
     pointer-events: auto;
+    z-index: 5;
+    transition: all .1s linear;
   }
+  
+  .user-panel .user-panel__btn--active{
+    transition: all .1s linear;
+    .user-panel__btn-line{
+      opacity: 0;
+      transition: opacity .1s linear;
+    }
+    &::before{
+      transition: transform .3s linear ;
+      opacity: 1;
+      width: 30px;
+      transform: translateY(10px) rotate(135deg);
+    }
+    &::after{
+      transition: transform .3s linear ;
+      width: 30px;
+      transform: translateY(-7px) rotate(-135deg);
+    }
+  }
+  
   .equipment{
     &__list{
       display: block;
@@ -413,6 +468,17 @@
   .slider {
     padding-top: 130px;
     padding-bottom: 30px;
+  }
+  ul.menu__list{
+    padding-top: 60px;
+    padding-left: 40px;
+  }
+  .menu__item-link {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .menu__item {
+    margin-bottom: 25px;
   }
 }
 

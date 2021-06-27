@@ -1,6 +1,18 @@
 
 $(function(){
 
+  $('.user-panel__btn').on('click', function(){
+    $('.user-panel__btn').toggleClass('user-panel__btn--active');
+    $('.menu__list').toggleClass('menu__list--active');
+  });
+
+  $('.menu__item-link').on('click', function(){
+    $('.user-panel__btn').removeClass('user-panel__btn--active');
+    $('.menu__list').removeClass('menu__list--active');
+
+  });
+
+
   $(".equipment__item--helmets").slice(0, 2).show();
   $(".equipment__show-all").on("click", function(e){
     e.preventDefault();
@@ -132,12 +144,10 @@ return false;
   });
 
   $(".star").rateYo({
-    /* starWidth: "29px", */
     normalFill: "#A5A5A5",
     ratedFill: "#000",
     fullStar: true,
     readOnly: true,
-   /*  starSvg: '<?xml version="1.0" encoding="UTF-8"?> <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15pt" height="14pt" viewBox="0 0 15 14" version="1.1"><path style=" stroke:none;;" d="M 6.753906 0.488281 L 5.050781 4.105469 L 1.246094 4.6875 C 0.566406 4.792969 0.292969 5.675781 0.785156 6.183594 L 3.539062 9 L 2.886719 12.976562 C 2.769531 13.695312 3.492188 14.234375 4.097656 13.898438 L 7.5 12.019531 L 10.902344 13.898438 C 11.507812 14.234375 12.230469 13.695312 12.113281 12.976562 L 11.460938 9 L 14.214844 6.183594 C 14.707031 5.675781 14.433594 4.792969 13.753906 4.691406 L 9.949219 4.105469 L 8.246094 0.488281 C 7.941406 -0.160156 7.058594 -0.167969 6.753906 0.488281 Z M 6.753906 0.488281 "/></svg>', */
   });
 
   new fullpage('#fullpage', {
