@@ -450,9 +450,23 @@
   }
   .bikes .swiper-pagination {
     left: 35%;
+    top: 16%;
   }
   .bikes__slider-button {
     top: 375px;
+  }
+}
+
+@media (max-width:780px){
+  .bikes__inner {
+    padding-top: 220px;
+  }
+  .bikes__slider-button {
+    top: 430px;
+  }
+  .bikes .swiper-pagination {
+    left: 34%;
+    top: 17%;
   }
 }
 
