@@ -1,8 +1,45 @@
 
+@media (max-width:1600px){
+  .bikes .swiper-pagination {
+    left: 30%;
+  }
+  .bikes__slider-button {
+    right: 303px;
+  }
+}
+
+@media (max-width:1440px){
+  .bikes .swiper-pagination {
+    left: 34%;
+  }
+  .bikes{
+    &__slider-button {
+      right: 223px;
+    }
+  }
+}
+
 @media (max-width:1360px){
   #fp-nav.fp-right {
     right: 25px;
     top: 52%;
+  }
+
+  .bikes .swiper-pagination {
+    left: 36%;
+  }
+  .bikes{
+    &__slider-button {
+      right: 183px;
+    }
+    &__img-box {
+      top: 290px;
+      position: absolute;
+      left: 0;
+    }
+    &__img{
+      width: 600px;
+    }
   }
 }
 
@@ -32,6 +69,35 @@
   }
   .slider-left {
     left: 55px;
+  }
+
+  .bikes .swiper-pagination {
+    top: 28%;
+    left: 38%;
+  }
+  .bikes{
+    &__inner {
+      padding-top: 225px;
+      padding-bottom: 200px;
+    }
+    &__content{
+      max-width: 550px;
+    }
+    &__title {
+      font-size: 38px;
+      line-height: 45px;
+      margin-bottom: 25px;
+    }
+    &__slider-button {
+      right: 133px;
+      top: 530px;
+    }
+    &__img-box {
+      top: 38%;
+    }
+    &__img{
+      width: 600px;
+    }
   }
 }
 
@@ -109,6 +175,57 @@
   }
   .slider-left {
     left: 50px;
+  }
+  .bikes .swiper-pagination {
+    top: 19%;
+    left: 38%;
+    font-size: 27px;
+    line-height: 33px;
+  }
+  .bikes{
+    &__title-top{
+      left: 60px;
+      transform: translateY(0%);
+      top: 100px;
+    }
+   &__inner {
+      padding-top: 180px;
+      height: 500px;
+    } 
+    &__content {
+      padding-top: 0;
+    } 
+    &__img {
+      width: 500px;
+    }
+    &__title {
+      font-size: 30px;
+      line-height: 36px;
+      margin-bottom: 20px;
+    }
+    &__descr {
+      margin-bottom: 20px;
+      font-size: 17px;
+      left: 21px;
+    }
+    &__slider-button {
+      top: 397px;
+      right: 130px;
+    }
+    
+    &__link {
+      width: 113px;
+      height: 35px;
+      font-size: 18px;
+      left: 22px;
+      img{
+        width: 21px;
+      }
+    }
+  }
+  .bikes .swiper-button-prev, .bikes .swiper-button-next {
+    width: 33px;
+    height: 33px;
   }
 }
 
@@ -322,6 +439,21 @@
   .slick-arrow {
     top: 53%;
   }
+
+  .bikes__img-box {
+    top: 44%;
+  }
+
+  .bikes__inner {
+    padding-top: 160px;
+    height: 500px;
+  }
+  .bikes .swiper-pagination {
+    left: 35%;
+  }
+  .bikes__slider-button {
+    top: 375px;
+  }
 }
 
 @media (max-width:760px){
@@ -456,6 +588,25 @@
     }
   }
   
+  .bikes{
+    &__title-top{
+      top: 70px;
+      left: 10px;
+    }
+    &__inner {
+      padding-top: 150px;
+      height: 300px;
+    }
+    &__title {
+      margin-bottom: 10px;
+    }
+    &__content {
+      max-width: 360px;
+    }
+    &__img-box {
+      left: -100px;
+    }
+  }
 }
 
 @media (max-width:640px){
@@ -480,6 +631,10 @@
   .menu__item {
     margin-bottom: 25px;
   }
+  .bikes__inner {
+    margin-right: 55px;
+  }
+
 }
 
 @media (max-width:550px){
@@ -551,6 +706,46 @@
       font-size: 14px;
       line-height: 17px;
     }
+  }
+  .bikes{
+    &__img {
+      width: 450px;
+    }
+    &__title {
+      font-size: 26px;
+      line-height: 31px;
+    }
+    &__descr {
+      font-size: 15px;
+      left: 18px;
+   }
+   .bikes__content {
+     max-width: 300px;
+    } 
+    &__slider-button {
+      top: 375px;
+      right: 104px;
+    }
+  }
+  .bikes .swiper-pagination {
+    left: 38%;
+    top: 15%;
+  }
+}
+
+@media (max-width:480px){
+  .bikes__img-box {
+    left: -210px;
+    top: 41%;
+  }
+  .bikes__inner {
+    margin-right: 0;
+  }
+  .bikes__slider-button {
+    right: 50px;
+  }
+  .bikes .swiper-button-prev {
+    left: -38px;
   }
 }
 
@@ -652,5 +847,31 @@
   }
   .slider {
     padding-top: 90px;
+  }
+  
+  .bikes .swiper-pagination {
+    left: 38%;
+    top: 13%;
+  }
+}
+
+@media (max-width:340px){
+  .bikes .swiper-pagination {
+    top: 20%;
+    left: 36%;
+  }
+  .bikes__descr {
+    font-size: 14px;
+    left: 18px;
+    width: 250px;
+    margin-left: auto;
+    margin-bottom: 10px;
+  }
+  .bikes__title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .bikes__slider-button {
+    top: 350px;
   }
 }
