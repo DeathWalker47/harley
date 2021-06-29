@@ -9,6 +9,18 @@
 }
 
 @media (max-width:1440px){
+  .bikes__title-top{
+    top: 120px;
+  }
+  .equipment__title-top{
+    top: 120px;
+  }
+  .reviews__title-top{
+    top: 30px;
+  }
+  .contacts__title-top{
+    top: 30px;
+  }
   .bikes .swiper-pagination {
     left: 34%;
   }
@@ -106,6 +118,7 @@
     top: 25px;
   }
   .equipment{
+  
     &__tabs{
       display: block;
       padding-top: 200px;
@@ -133,6 +146,7 @@
   }
 
   .contacts{
+  
     &__address{
       font-size: 22px;
       line-height: 26px;
@@ -183,11 +197,7 @@
     line-height: 33px;
   }
   .bikes{
-    &__title-top{
-      left: 60px;
-      transform: translateY(0%);
-      top: 100px;
-    }
+
    &__inner {
       padding-top: 180px;
       height: 500px;
@@ -227,6 +237,12 @@
     width: 33px;
     height: 33px;
   }
+  .reviews__title-top {
+    top: 110px;
+  }
+  .contacts__title-top {
+    top: 45px;
+  }
 }
 
 
@@ -255,7 +271,7 @@
     width: 27px;
     height: 4px;
     margin-left: auto;
-    transition: opacity .1s linear;
+    transition: opacity .4s linear;
   }
   .user-panel .user-panel__btn{
     &::before {
@@ -298,6 +314,7 @@
   .equipment{
     &__tabs{
       margin-right: 0;
+      margin-left: 0;
     }
     &__tabs-btn{
       margin-bottom: 130px;      
@@ -455,6 +472,20 @@
   .bikes__slider-button {
     top: 375px;
   }
+
+  .bikes__title-top,
+  .equipment__title-top  {
+    top: 80px;
+    left: 60px;
+  }
+  .reviews__title-top {
+    top: -10px;
+    left: 60px;
+  } 
+  .contacts__title-top {
+    top: 20px;
+    left: 60px;
+  }
 }
 
 @media (max-width:780px){
@@ -603,10 +634,10 @@
   }
   
   .bikes{
-    &__title-top{
+    /* &__title-top{
       top: 70px;
       left: 10px;
-    }
+    } */
     &__inner {
       padding-top: 150px;
       height: 300px;
@@ -744,6 +775,9 @@
   .bikes .swiper-pagination {
     left: 38%;
     top: 15%;
+  }
+  .contacts__link a {
+    margin: 0 13px;
   }
 }
 

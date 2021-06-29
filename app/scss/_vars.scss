@@ -4,7 +4,7 @@ $black:#000;
 $gray:#E2E2E2;
 
 %bebas-400{
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: 'Bebas Neue', 'Montserrat', sans-serif;
   font-weight: 400;
 }
 
@@ -20,7 +20,7 @@ $gray:#E2E2E2;
 
 %btn{
   background-color: $default;
-  display: block;
+  display: inline-block;
   border-radius: 6px;
   color: $black;
   text-transform: uppercase;
