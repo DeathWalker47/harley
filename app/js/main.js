@@ -119,6 +119,7 @@ return false;
     fade: true,
     cssEase: 'linear',
     /* slidesToScroll: 1, */
+
     prevArrow: '<button class="slider-btn slider-left"><img src="images/icons/slider-left.svg"></button>',
     nextArrow: '<button class="slider-btn slider-right"><img src="images/icons/slider-right.svg"></button>',
     responsive: [
@@ -138,7 +139,8 @@ return false;
           nextArrow: '<button class="slider-btn slider-right"><img src="images/icons/slider-rightmobile.svg"></button>',
         }
       }
-    ]
+    ],
+
      
     
   });
@@ -161,7 +163,8 @@ return false;
     menu: '#header__nav',
     anchors: ['top', 'bikes', 'equipment', 'reviews', 'contact'],
     css3:true,
-    scrollingSpeed: 1000,
+    scrollingSpeed: 1300,
+    dragAndMove: true,
   });
 
 });

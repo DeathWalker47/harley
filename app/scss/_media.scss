@@ -132,8 +132,6 @@
     &__inner {
       padding-top: 300px;
      } 
-     &__content {
-     } 
      &__img {
        width: 74%;
      }
@@ -247,43 +245,7 @@
     left: 50px;
   }
   
-  .bikes{
-
-   /* &__inner {
-      padding-top: 180px;
   
-    }  */
-    /* &__content {
-      padding-top: 0;
-    }  */
-    /* &__img {
-      width: 500px;
-    } */
-    /* &__title {
-      font-size: 30px;
-      line-height: 36px;
-      margin-bottom: 20px;
-    }
-    &__descr {
-      margin-bottom: 20px;
-      font-size: 17px;
-      left: 21px;
-    }
-    &__slider-button {
-      top: 397px;
-      right: 130px;
-    }
-    
-    &__link {
-      width: 113px;
-      height: 35px;
-      font-size: 18px;
-      left: 22px;
-      img{
-        width: 21px;
-      }
-    } */
-  }
   .bikes .swiper-button-prev, .bikes .swiper-button-next {
     width: 33px;
     height: 33px;
@@ -307,8 +269,7 @@
   }
 
   .bikes{
-    &__inner {
-    }
+   
     &__img-box {
       top: 46%;
       position: absolute;
@@ -770,7 +731,12 @@
 @media (max-width:550px){
   .top{
     background-image: url('../images/bg-topmobile.jpg');
-    
+    &__content-link {
+      font-size: 19px;
+      line-height: 22px;
+      margin-bottom: 42px;
+      padding: 10px 8px 8px 10px;
+    }
     &__content {
       max-width: 100%;
       margin: 0;
@@ -801,6 +767,8 @@
   .contacts__link{
     padding-bottom: 30px;
     justify-content: center;
+    align-items: flex-start;
+    padding-top: 0;
   }
 
   .slider{
@@ -892,7 +860,8 @@
   }
   .bikes .bikes__content {
     padding-bottom: 100px;
-    max-width: 300px;
+    /* max-width: 300px; */ /* Убрал чтбы проверить на телефоне,чтобы текст не сузился */
+    max-width: 350px;
   }
   .bikes .swiper-pagination {
     top: 24%;
@@ -908,7 +877,16 @@
   .title.equipment__title-top{
     top: 4%;
   }
-  
+
+  .slick-arrow {
+    top: 355px;
+  } 
+  .slider-left {
+    left: 28%;
+  }   
+  .slider-right {
+    right: 26%;
+  }
   }
 
 @media (max-width:380px){
@@ -922,12 +900,7 @@
       line-height: 25px;
     }
     &__content-link {
-      width: 140px;
-      height: 40px;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      
       img{
         width: 34px;
         margin-left: 5px;
@@ -1017,6 +990,13 @@
   .bikes .bikes__content {
     padding-bottom: 65px;
   }
+
+  .contacts__item:last-child {
+    margin-bottom: 42px;
+  }
+  .contacts__inner{
+    padding-top: 100px;
+  }
 }
 
 @media (max-width:375px) and (min-height:896px){
@@ -1026,8 +1006,8 @@
   }
   .bikes .swiper-pagination {
     left: 38%;
-    top: 29%;
-}
+    top: 27%;
+  }
 .bikes .bikes__content {
   padding-bottom: 100px;
   max-width: 300px;
@@ -1051,8 +1031,8 @@
     line-height: 28px;
   }
   .bikes__slider-button {
-    top: 382px;
-}
+    top: 68%;
+  }
   .bikes__img-box {
     left: -184px;
     top: 48%;
