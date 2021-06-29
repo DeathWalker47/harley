@@ -34,18 +34,29 @@ body{
   font-size: 160px;
   line-height: 195px;
   position: absolute;
-  left: 99px;
+  left: 15%;
+  top: 14%;
   @extend %montserrat-700;
   color: rgba($color: #fff, $alpha: .1);
-  z-index: -1;
 }
 
-@media (max-width:1090px){
-  .title {
+@media (max-width:1440px){
+  .title{
+    left: 3%;
+    top: 15%;
+  }
+ 
+}
+
+@media (max-width: 834px){
+  .title{
+    left: 9%;
+    top: 10%;
     font-size: 110px;
     line-height: 134px;
   }
 }
+
 
 @media (max-width: 760px){
 .title {
@@ -60,9 +71,12 @@ body{
     color: rgba(255,255,255, .3);
   }
 }
-@media (max-width: 375px){
-  .title {
+@media (max-width: 420px){
+  .title{
+    left: 3%;
+    top: 11%;
     font-size: 46px;
     line-height: 55px;
   }
 }
+

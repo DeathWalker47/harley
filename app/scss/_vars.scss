@@ -24,8 +24,8 @@ $gray:#E2E2E2;
   border-radius: 6px;
   color: $black;
   text-transform: uppercase;
-  font-size: 20px;
-  line-height: 24px;
+  /* font-size: 20px;
+  line-height: 24px; */
   @extend %bebas-400;
   transition: all .3s linear;
   &:hover{

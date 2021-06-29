@@ -130,7 +130,7 @@ return false;
         }
       },
       {
-        breakpoint: 376,
+        breakpoint: 420,
         settings:{
           dots: true,
           arrows: true,
