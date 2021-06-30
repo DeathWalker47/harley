@@ -1,12 +1,11 @@
+$(function () {
 
-$(function(){
-
-  $('.user-panel__btn').on('click', function(){
+  $('.user-panel__btn').on('click', function () {
     $('.user-panel__btn').toggleClass('user-panel__btn--active');
     $('.menu__list').toggleClass('menu__list--active');
   });
 
-  $('.menu__item-link').on('click', function(){
+  $('.menu__item-link').on('click', function () {
     $('.user-panel__btn').removeClass('user-panel__btn--active');
     $('.menu__list').removeClass('menu__list--active');
 
@@ -14,10 +13,10 @@ $(function(){
 
 
   $(".equipment__item--helmets").slice(0, 2).show();
-  $(".equipment__show-all").on("click", function(e){
+  $(".equipment__show-all").on("click", function (e) {
     e.preventDefault();
     $(".equipment__item--helmets:hidden").slice(0, 10).slideDown();
-    if($(".equipment__item--helmets:hidden").length == 0) {
+    if ($(".equipment__item--helmets:hidden").length == 0) {
       $(".equipment__show-all").text("No Content").addClass("noContent");
     }
   });
@@ -40,47 +39,47 @@ $(function(){
     }
   }); */
 
-  
- 
+
+
   const section = $('.section'),
-  nav = $('.page-section'),
-  navHeight = nav.outerHeight(); // получаем высоту навигации 
+    nav = $('.page-section'),
+    navHeight = nav.outerHeight(); // получаем высоту навигации 
 
-// поворот экрана 
-window.addEventListener('orientationchange', function () {
-navHeight = nav.outerHeight();
-}, false);
+  // поворот экрана 
+  window.addEventListener('orientationchange', function () {
+    navHeight = nav.outerHeight();
+  }, false);
 
-$(window).on('scroll', function () {
-const position = $(this).scrollTop();
+  $(window).on('scroll', function () {
+    const position = $(this).scrollTop();
 
 
-section.each(function () {
-    const top = $(this).offset().top - navHeight - 5,
-          bottom = top + $(this).outerHeight();
+    section.each(function () {
+      const top = $(this).offset().top - navHeight - 5,
+        bottom = top + $(this).outerHeight();
 
-    if (position >= top && position <= bottom) {
+      if (position >= top && position <= bottom) {
         nav.find('a').removeClass('active');
         section.removeClass('active');
 
         $(this).addClass('active');
         nav.find('a[href="#' + $(this).attr('id') + '"]').addClass('active');
-    }
-});
-});
+      }
+    });
+  });
 
-nav.find('a').on('click', function () {
-const id = $(this).attr('href');
+  nav.find('a').on('click', function () {
+    const id = $(this).attr('href');
 
-$('html, body').animate({
-    scrollTop: $(id).offset().top - navHeight
-}, 487);
+    $('html, body').animate({
+      scrollTop: $(id).offset().top - navHeight
+    }, 487);
 
-return false;
-});
+    return false;
+  });
 
 
-  $('.equipment__tabs-item').on('click', function(e){
+  $('.equipment__tabs-item').on('click', function (e) {
     e.preventDefault();
     $('.equipment__tabs-item').removeClass('equipment__tabs-item--active');
     $(this).addClass('equipment__tabs-item--active');
@@ -90,9 +89,9 @@ return false;
   });
 
 
-  $('.equipment__menu-link').on('click', function(e){ 
-    e.preventDefault(); 
-  /* Убираю дефолтный переход по ссылкам */
+  $('.equipment__menu-link').on('click', function (e) {
+    e.preventDefault();
+    /* Убираю дефолтный переход по ссылкам */
     $('.equipment__menu-link').removeClass('equipment__menu-link--active');
     $('.equipment__menu-link').removeClass('equipment__menu-link--block');
     /* При клике на ссылку, убираю у ВСЕХ ссылок класс актив, также убираю у ВСЕХ ссылок класс блок, который делает ссылку видимой(css) */
@@ -105,7 +104,7 @@ return false;
     /* А здесь мы ищем ссылку, на которую кликнули, у которой href имеет id бокса, и добавляем этому боксу класс актив */
   });
 
-  $('.equipment__menu-btn').on('click', function(){
+  $('.equipment__menu-btn').on('click', function () {
     $(this).removeClass('equipment__menu-link--block');
     /* При клике на кнопку меню то у ТОГО, на КОГО КЛИКНУЛИ, убирается класс блок*/
     $('.equipment__menu-link').toggleClass('equipment__menu-link--block');
@@ -118,21 +117,18 @@ return false;
     slidesToShow: 1,
     fade: true,
     cssEase: 'linear',
-    /* slidesToScroll: 1, */
-
     prevArrow: '<button class="slider-btn slider-left"><img src="images/icons/slider-left.svg"></button>',
     nextArrow: '<button class="slider-btn slider-right"><img src="images/icons/slider-right.svg"></button>',
-    responsive: [
-      {
+    responsive: [{
         breakpoint: 761,
-        settings:{
-        dots: true,
-        arrows: false,
+        settings: {
+          dots: true,
+          arrows: false,
         }
       },
       {
         breakpoint: 420,
-        settings:{
+        settings: {
           dots: true,
           arrows: true,
           prevArrow: '<button class="slider-btn slider-left"><img src="images/icons/slider-leftmobile.svg"></button>',
@@ -141,8 +137,8 @@ return false;
       }
     ],
 
-     
-    
+
+
   });
 
   $(".star").rateYo({
@@ -153,39 +149,36 @@ return false;
   });
 
   new fullpage('#fullpage', {
-    
-    autoScrolling:true,
-    scrollHorizontally: false,
+
+    autoScrolling: true,
+    scrollHorizontally: true,
     sectionSelector: '.page-section',
     navigation: true,
-    scrollingSpeed: 900,
     scrollOverflow: true,
     menu: '#header__nav',
     anchors: ['top', 'bikes', 'equipment', 'reviews', 'contact'],
-    css3:true,
-    scrollingSpeed: 1300,
-    dragAndMove: true,
+    css3: true,
+    scrollingSpeed: 1500,
   });
 
 });
 
 
 const swiper = new Swiper('.swiper-container', {
-    speed: 1000,
-    effect: 'fade',
-    fadeEffect: {
+  speed: 1000,
+  effect: 'fade',
+  fadeEffect: {
     crossFade: true
   },
- 
-    loop: false,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: 'true',
-      type: 'fraction',
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  });
-  
+
+  loop: false,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: 'true',
+    type: 'fraction',
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
