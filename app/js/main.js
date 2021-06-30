@@ -22,7 +22,7 @@ $(function(){
     }
   });
 
-  $(".equipment__item--jackets ").slice(0, 2).show();
+  /* $(".equipment__item--jackets ").slice(0, 2).show();
   $(".equipment__show-all").on("click", function(e){
     e.preventDefault();
     $(".equipment__item--jackets:hidden").slice(0, 2).slideDown();
@@ -38,7 +38,7 @@ $(function(){
     if($(".equipment__item--cases:hidden").length == 0) {
       $(".equipment__show").text("No Content").addClass("noContent");
     }
-  });
+  }); */
 
   
  
@@ -155,7 +155,7 @@ return false;
   new fullpage('#fullpage', {
     
     autoScrolling:true,
-    scrollHorizontally: true,
+    scrollHorizontally: false,
     sectionSelector: '.page-section',
     navigation: true,
     scrollingSpeed: 900,
@@ -164,7 +164,7 @@ return false;
     anchors: ['top', 'bikes', 'equipment', 'reviews', 'contact'],
     css3:true,
     scrollingSpeed: 1300,
-    dragAndMove: true,
+    dragAndMove: fingersonly,
   });
 
 });
