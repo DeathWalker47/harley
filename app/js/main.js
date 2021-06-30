@@ -164,7 +164,7 @@ return false;
     anchors: ['top', 'bikes', 'equipment', 'reviews', 'contact'],
     css3:true,
     scrollingSpeed: 1300,
-    dragAndMove: fingersonly,
+    dragAndMove: true,
   });
 
 });
