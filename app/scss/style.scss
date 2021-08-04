@@ -18,7 +18,9 @@
     align-items: center;
   }
 }
-
+ul.menu__list{
+  transition: all .5s ease;
+}
 .menu {
   margin-right: 83px;
   margin-left: auto;
